@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Sep 13 22:23:07 2023
+# Process ID: 24308
+# Current directory: C:/Users/20963/Desktop/Grade3/FPGA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15732 C:\Users\20963\Desktop\Grade3\FPGA\project_1.xpr
+# Log file: C:/Users/20963/Desktop/Grade3/FPGA/vivado.log
+# Journal file: C:/Users/20963/Desktop/Grade3/FPGA\vivado.jou
+# Running On: lxy, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 16498 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/20963/Desktop/Grade3/FPGA/project_1.xpr
+open_project C:/Users/20963/Desktop/Grade3/FPGA/project_1.xpr

@@ -1,0 +1,481 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Sep 12 15:40:05 2023
+# Process ID: 17848
+# Current directory: C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log CPU_RISCV.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CPU_RISCV.tcl
+# Log file: C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.runs/synth_1/CPU_RISCV.vds
+# Journal file: C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.runs/synth_1\vivado.jou
+# Running On: lxy, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 16498 MB
+#-----------------------------------------------------------
+source CPU_RISCV.tcl -notrace
+Command: synth_design -top CPU_RISCV -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5864
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/vivado/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1206.910 ; gain = 406.926
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CPU_RISCV' [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/CPU.v:2]
+INFO: [Synth 8-6157] synthesizing module 'divider' [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/FPGADigit.v:25]
+	Parameter N bound to: 50000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'divider' (0#1) [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/FPGADigit.v:25]
+INFO: [Synth 8-6157] synthesizing module 'divider__parameterized0' [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/FPGADigit.v:25]
+	Parameter N bound to: 5000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'divider__parameterized0' (0#1) [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/FPGADigit.v:25]
+INFO: [Synth 8-6157] synthesizing module 'divider__parameterized1' [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/FPGADigit.v:25]
+	Parameter N bound to: 1000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'divider__parameterized1' (0#1) [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/FPGADigit.v:25]
+INFO: [Synth 8-6157] synthesizing module 'divider__parameterized2' [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/FPGADigit.v:25]
+	Parameter N bound to: 500000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'divider__parameterized2' (0#1) [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/FPGADigit.v:25]
+INFO: [Synth 8-6157] synthesizing module 'mux4' [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/multiuse.v:16]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux4' (0#1) [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/multiuse.v:16]
+INFO: [Synth 8-6157] synthesizing module 'mux4__parameterized0' [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/multiuse.v:16]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux4__parameterized0' (0#1) [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/multiuse.v:16]
+INFO: [Synth 8-6157] synthesizing module 'register' [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:50]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'register' (0#1) [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:50]
+INFO: [Synth 8-6157] synthesizing module 'ROM' [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:71]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'D:\_Code\verilog\RISC-V\mem.txt'; please make sure the file is added to project and has read permission, ignoring [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'ROM' (0#1) [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:71]
+INFO: [Synth 8-6157] synthesizing module 'hard_wire_controller' [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/hard_wire_controller.v:2]
+INFO: [Synth 8-6157] synthesizing module 'arithmetic_controller' [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/hard_wire_controller.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'arithmetic_controller' (0#1) [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/hard_wire_controller.v:20]
+INFO: [Synth 8-6157] synthesizing module 'control_signal_controller' [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/hard_wire_controller.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'control_signal_controller' (0#1) [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/hard_wire_controller.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'hard_wire_controller' (0#1) [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/hard_wire_controller.v:2]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/multiuse.v:32]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (0#1) [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/multiuse.v:32]
+INFO: [Synth 8-6157] synthesizing module 'RegFile' [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'RegFile' (0#1) [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:27]
+INFO: [Synth 8-6157] synthesizing module 'extender_sign' [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/extender.v:13]
+	Parameter in_WIDTH bound to: 12 - type: integer 
+	Parameter out_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'extender_sign' (0#1) [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/extender.v:13]
+INFO: [Synth 8-6157] synthesizing module 'extender_sign__parameterized0' [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/extender.v:13]
+	Parameter in_WIDTH bound to: 20 - type: integer 
+	Parameter out_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'extender_sign__parameterized0' (0#1) [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/extender.v:13]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized0' [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/multiuse.v:32]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized0' (0#1) [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/multiuse.v:32]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/ALU.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/ALU.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/ALU.v:2]
+INFO: [Synth 8-6157] synthesizing module 'MEM' [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MEM' (0#1) [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:1]
+INFO: [Synth 8-6157] synthesizing module 'log_shifter_left' [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/shifter.v:22]
+	Parameter data_WIDTH bound to: 32 - type: integer 
+	Parameter shift_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'log_shifter_left' (0#1) [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/shifter.v:22]
+INFO: [Synth 8-6157] synthesizing module 'FPGADigit' [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/FPGADigit.v:2]
+INFO: [Synth 8-6157] synthesizing module 'divider__parameterized3' [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/FPGADigit.v:25]
+	Parameter N bound to: 5000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'divider__parameterized3' (0#1) [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/FPGADigit.v:25]
+INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/FPGADigit.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/FPGADigit.v:44]
+INFO: [Synth 8-6157] synthesizing module 'decoder3_8' [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/FPGADigit.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'decoder3_8' (0#1) [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/FPGADigit.v:61]
+INFO: [Synth 8-6157] synthesizing module 'display_sel' [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/FPGADigit.v:78]
+INFO: [Synth 8-226] default block is never used [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/FPGADigit.v:83]
+INFO: [Synth 8-6155] done synthesizing module 'display_sel' (0#1) [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/FPGADigit.v:78]
+INFO: [Synth 8-6157] synthesizing module 'pattern' [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/FPGADigit.v:97]
+INFO: [Synth 8-6155] done synthesizing module 'pattern' (0#1) [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/FPGADigit.v:97]
+INFO: [Synth 8-6155] done synthesizing module 'FPGADigit' (0#1) [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/FPGADigit.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'CPU_RISCV' (0#1) [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/CPU.v:2]
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: Unable to determine number of words or word size in RAM. 
+	2: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+WARNING: [Synth 8-3848] Net rom in module/entity ROM does not have driver. [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/memory.v:74]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1376.902 ; gain = 576.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1376.902 ; gain = 576.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1376.902 ; gain = 576.918
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1376.902 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/constrs_1/imports/risc-V/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/constrs_1/imports/risc-V/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/constrs_1/imports/risc-V/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/CPU_RISCV_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/CPU_RISCV_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1376.902 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1376.902 ; gain = 0.000
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/vivado/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1376.902 ; gain = 576.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1376.902 ; gain = 576.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1376.902 ; gain = 576.918
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'ALU_result_reg' [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.srcs/sources_1/imports/risc-V/ALU.v:10]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1376.902 ; gain = 576.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Multipliers : 
+	              32x32  Multipliers := 1     
++---RAMs : 
+	              32K Bit	(1024 X 32 bit)          RAMs := 1     
+	             1024 Bit	(32 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   4 Input   32 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 5     
+	   6 Input   32 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 2     
+	  15 Input    4 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 7     
+	  11 Input    1 Bit        Muxes := 1     
+	  16 Input    1 Bit        Muxes := 1     
+	  14 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP ALU_result0, operation Mode is: A*B.
+DSP Report: operator ALU_result0 is absorbed into DSP ALU_result0.
+DSP Report: operator ALU_result0 is absorbed into DSP ALU_result0.
+DSP Report: Generating DSP ALU_result0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator ALU_result0 is absorbed into DSP ALU_result0.
+DSP Report: operator ALU_result0 is absorbed into DSP ALU_result0.
+DSP Report: Generating DSP ALU_result0, operation Mode is: A*B.
+DSP Report: operator ALU_result0 is absorbed into DSP ALU_result0.
+DSP Report: operator ALU_result0 is absorbed into DSP ALU_result0.
+DSP Report: Generating DSP ALU_result0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator ALU_result0 is absorbed into DSP ALU_result0.
+DSP Report: operator ALU_result0 is absorbed into DSP ALU_result0.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_result_reg[31]) is unused and will be removed from module CPU_RISCV.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_result_reg[30]) is unused and will be removed from module CPU_RISCV.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_result_reg[29]) is unused and will be removed from module CPU_RISCV.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_result_reg[28]) is unused and will be removed from module CPU_RISCV.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_result_reg[27]) is unused and will be removed from module CPU_RISCV.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_result_reg[26]) is unused and will be removed from module CPU_RISCV.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_result_reg[25]) is unused and will be removed from module CPU_RISCV.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_result_reg[24]) is unused and will be removed from module CPU_RISCV.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_result_reg[23]) is unused and will be removed from module CPU_RISCV.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_result_reg[22]) is unused and will be removed from module CPU_RISCV.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_result_reg[21]) is unused and will be removed from module CPU_RISCV.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_result_reg[20]) is unused and will be removed from module CPU_RISCV.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_result_reg[19]) is unused and will be removed from module CPU_RISCV.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_result_reg[18]) is unused and will be removed from module CPU_RISCV.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_result_reg[17]) is unused and will be removed from module CPU_RISCV.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_result_reg[16]) is unused and will be removed from module CPU_RISCV.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_result_reg[15]) is unused and will be removed from module CPU_RISCV.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_result_reg[14]) is unused and will be removed from module CPU_RISCV.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_result_reg[13]) is unused and will be removed from module CPU_RISCV.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_result_reg[12]) is unused and will be removed from module CPU_RISCV.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_result_reg[11]) is unused and will be removed from module CPU_RISCV.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_result_reg[10]) is unused and will be removed from module CPU_RISCV.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_result_reg[9]) is unused and will be removed from module CPU_RISCV.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_result_reg[8]) is unused and will be removed from module CPU_RISCV.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_result_reg[7]) is unused and will be removed from module CPU_RISCV.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_result_reg[6]) is unused and will be removed from module CPU_RISCV.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_result_reg[5]) is unused and will be removed from module CPU_RISCV.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_result_reg[4]) is unused and will be removed from module CPU_RISCV.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_result_reg[3]) is unused and will be removed from module CPU_RISCV.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_result_reg[2]) is unused and will be removed from module CPU_RISCV.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_result_reg[1]) is unused and will be removed from module CPU_RISCV.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_result_reg[0]) is unused and will be removed from module CPU_RISCV.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1376.902 ; gain = 576.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ALU         | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1376.902 ; gain = 576.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1376.902 ; gain = 576.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1376.902 ; gain = 576.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1376.902 ; gain = 576.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1376.902 ; gain = 576.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1376.902 ; gain = 576.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1376.902 ; gain = 576.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1376.902 ; gain = 576.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1376.902 ; gain = 576.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    35|
+|3     |LUT1   |     6|
+|4     |LUT2   |     3|
+|5     |LUT3   |    13|
+|6     |LUT4   |    17|
+|7     |LUT5   |    20|
+|8     |LUT6   |    10|
+|9     |MUXF7  |     8|
+|10    |MUXF8  |     4|
+|11    |FDRE   |   139|
+|12    |IBUF   |     6|
+|13    |OBUF   |    17|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1376.902 ; gain = 576.918
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 34 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 1376.902 ; gain = 576.918
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 1376.902 ; gain = 576.918
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1376.902 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 47 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1376.902 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 1eb36522
+INFO: [Common 17-83] Releasing license: Synthesis
+72 Infos, 135 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 1376.902 ; gain = 994.836
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/project_1/project_1.runs/synth_1/CPU_RISCV.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file CPU_RISCV_utilization_synth.rpt -pb CPU_RISCV_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 12 15:40:46 2023...
