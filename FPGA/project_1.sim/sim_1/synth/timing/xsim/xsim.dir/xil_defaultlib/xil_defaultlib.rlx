@@ -1,0 +1,6 @@
+0.7
+2020.2
+May  7 2023
+15:24:31
+C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/FPGA/project_1.sim/sim_1/synth/timing/xsim/testbench_CPU_RISCV_interrupt_time_synth.v,1694696173,verilog,,C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/FPGA/project_1.srcs/sources_1/new/CPU_tb.v,,CPU_RISCV;DFlipFlop;DFlipFlop_10;DFlipFlop_11;DFlipFlop_12;DFlipFlop_4;DFlipFlop_5;DFlipFlop_6;DFlipFlop_7;DFlipFlop_8;DFlipFlop_9;FPGADigit;InterrEn;Interrupter;Interrupter_0;Interrupter_1;Interrupter_2;Interrupter_3;counter;divider;divider__parameterized0;divider__parameterized1;divider__parameterized2;divider__parameterized3;glbl;mux4;register;register__parameterized1,,,,,,,,
+C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/FPGA/project_1.srcs/sources_1/new/CPU_tb.v,1694696015,verilog,,,,testbench_CPU_RISCV_interrupt,,,,,,,,

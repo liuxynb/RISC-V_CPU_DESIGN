@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"testbench_CPU_RISCV_interrupt_time_synth.v" \
+"../../../../../project_1.srcs/sources_1/new/CPU_tb.v" \
+
+# Do not sort compile order
+nosort

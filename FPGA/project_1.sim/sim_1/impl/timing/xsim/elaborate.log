@@ -1,0 +1,61 @@
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot testbench_CPU_RISCV_interrupt_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.testbench_CPU_RISCV_interrupt xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'Display_Sel' [C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/FPGA/project_1.srcs/sources_1/new/CPU_tb.v:27]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "testbench_CPU_RISCV_interrupt_time_impl.sdf", for root module "testbench_CPU_RISCV_interrupt/test_cpu".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "testbench_CPU_RISCV_interrupt_time_impl.sdf", for root module "testbench_CPU_RISCV_interrupt/test_cpu".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.MUXF7
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.MUXF8
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.FDRE_default
+Compiling module xil_defaultlib.counter
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.CARRY4
+Compiling module xil_defaultlib.divider__parameterized3
+Compiling module xil_defaultlib.FPGADigit
+Compiling module simprims_ver.FDCE_default
+Compiling module xil_defaultlib.DFlipFlop_11
+Compiling module xil_defaultlib.DFlipFlop_12
+Compiling module xil_defaultlib.Interrupter
+Compiling module xil_defaultlib.DFlipFlop_9
+Compiling module xil_defaultlib.DFlipFlop_10
+Compiling module xil_defaultlib.Interrupter_0
+Compiling module xil_defaultlib.DFlipFlop_7
+Compiling module xil_defaultlib.DFlipFlop_8
+Compiling module xil_defaultlib.Interrupter_1
+Compiling module xil_defaultlib.DFlipFlop_5
+Compiling module xil_defaultlib.DFlipFlop_6
+Compiling module xil_defaultlib.Interrupter_2
+Compiling module xil_defaultlib.DFlipFlop
+Compiling module xil_defaultlib.DFlipFlop_4
+Compiling module xil_defaultlib.Interrupter_3
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.divider
+Compiling module xil_defaultlib.divider__parameterized0
+Compiling module xil_defaultlib.divider__parameterized1
+Compiling module xil_defaultlib.divider__parameterized2
+Compiling module xil_defaultlib.register__parameterized1
+Compiling module xil_defaultlib.InterrEn
+Compiling module xil_defaultlib.mux4
+Compiling module xil_defaultlib.CPU_RISCV
+Compiling module xil_defaultlib.testbench_CPU_RISCV_interrupt
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_CPU_RISCV_interrupt_time_impl
