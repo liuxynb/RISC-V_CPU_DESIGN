@@ -1,7 +1,0 @@
-Running: xsim.dir/testbench_CPU_RISCV_interrupt_time_synth/xsimk.exe -simmode gui -wdb testbench_CPU_RISCV_interrupt_time_synth.wdb -simrunnum 0 -socket 2370
-Design successfully loaded
-Design Loading Memory Usage: 15000 KB (Peak: 15000 KB)
-Design Loading CPU Usage: 0 ms
-Simulation completed
-Simulation Memory Usage: 16832 KB (Peak: 16832 KB)
-Simulation CPU Usage: 0 ms
