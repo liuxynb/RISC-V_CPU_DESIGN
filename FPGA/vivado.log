@@ -100,3 +100,9 @@ INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2023.1/data/ip'.
 open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1490.965 ; gain = 168.574
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\20963\Desktop\Grade3\Computer-Organization-Course-Design\FPGA\project_1.srcs\sources_1\imports\risc-V\multiuse.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\20963\Desktop\Grade3\Computer-Organization-Course-Design\FPGA\project_1.srcs\sources_1\imports\risc-V\CPU.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/FPGA/project_1.srcs/utils_1/imports/synth_1/CPU_RISCV.dcp with file C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/FPGA/project_1.runs/synth_1/CPU_RISCV.dcp

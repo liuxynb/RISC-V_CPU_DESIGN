@@ -13,3 +13,5 @@
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/20963/Desktop/Grade3/Computer-Organization-Course-Design/FPGA/project_1.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
